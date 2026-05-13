@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arina & Aleksandr | Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-photo">
+            <img src="photo/44D12859-1AB1-4D20-BA4D-09C855AC4B78.PNG" alt="Arina and Aleksandr">
+        </div>
+        <div class="hero__shade"></div>
+
+        <div class="hero__content">
+            <div class="music-player" aria-label="Музыкальный плеер">
+                <button class="music-player__button" type="button" aria-label="Включить музыку" aria-pressed="false">
+                    <span class="music-player__play">▶</span>
+                    <span class="music-player__pause">Ⅱ</span>
+                </button>
+                <div class="music-player__meta">
+                    <span class="music-player__label">Now playing</span>
+                    <span class="music-player__title">МОТ — Намёк на нас</span>
+                    <span class="music-player__track">
+                        <span class="music-player__progress"></span>
+                    </span>
+                </div>
+            </div>
+            <audio id="wedding-music" src="audio/МОТ - Намёк на нас.mp3" preload="metadata"></audio>
+
+            <p class="hero__label">Мы женимся</p>
+            <h1>Arina & Aleksandr</h1>
+            <p class="hero__date">7 августа 2026</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section intro">
+            <p>
+                Мы будем счастливы разделить с вами этот особенный день.
+                Приглашаем вас стать частью нашей истории любви.
+            </p>
+        </section>
+
+        <section class="section split">
+            <article class="glass calendar-card">
+                <p class="section-label">Save the date</p>
+                <h2>Август 2026</h2>
+
+                <div class="calendar" aria-label="Календарь на август 2026">
+                    <span>Пн</span>
+                    <span>Вт</span>
+                    <span>Ср</span>
+                    <span>Чт</span>
+                    <span>Пт</span>
+                    <span>Сб</span>
+                    <span>Вс</span>
+
+                    <span class="muted">27</span>
+                    <span class="muted">28</span>
+                    <span class="muted">29</span>
+                    <span class="muted">30</span>
+                    <span class="muted">31</span>
+                    <span>1</span>
+                    <span>2</span>
+
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span class="selected">7</span>
+                    <span>8</span>
+                    <span>9</span>
+
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                    <span>15</span>
+                    <span>16</span>
+
+                    <span>17</span>
+                    <span>18</span>
+                    <span>19</span>
+                    <span>20</span>
+                    <span>21</span>
+                    <span>22</span>
+                    <span>23</span>
+
+                    <span>24</span>
+                    <span>25</span>
+                    <span>26</span>
+                    <span>27</span>
+                    <span>28</span>
+                    <span>29</span>
+                    <span>30</span>
+
+                    <span>31</span>
+                </div>
+            </article>
+
+            <article class="glass location-card">
+                <p class="section-label">Локация</p>
+                <h2>Парк-отель Орловский</h2>
+                <p>
+                    Мы будем ждать вас в уютном месте, где природа, свет и атмосфера
+                    создадут идеальный фон для нашего дня.
+                </p>
+                <a class="button" href="#">Открыть на карте</a>
+            </article>
+        </section>
+
+        <section class="section glass program">
+            <p class="section-label">Программа дня</p>
+            <h2>Будем вместе</h2>
+
+            <div class="timeline">
+                <div class="timeline__item">
+                    <time>15:30</time>
+                    <p>Сбор гостей</p>
+                </div>
+                <div class="timeline__item">
+                    <time>16:00</time>
+                    <p>Церемония</p>
+                </div>
+                <div class="timeline__item">
+                    <time>17:00</time>
+                    <p>Ужин</p>
+                </div>
+                <div class="timeline__item">
+                    <time>20:00</time>
+                    <p>Танцы</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section glass dress-code">
+            <p class="section-label">Дресс-код</p>
+            <h2>Нежная палитра</h2>
+            <p>
+                Нам будет очень приятно, если вы поддержите нежную цветовую
+                палитру нашего дня.
+            </p>
+
+            <div class="palette" aria-label="Цвета дресс-кода">
+                <div class="palette__item">
+                    <span class="swatch swatch--white"></span>
+                    <span>white</span>
+                </div>
+                <div class="palette__item">
+                    <span class="swatch swatch--milk"></span>
+                    <span>milk</span>
+                </div>
+                <div class="palette__item">
+                    <span class="swatch swatch--champagne"></span>
+                    <span>champagne</span>
+                </div>
+                <div class="palette__item">
+                    <span class="swatch swatch--beige"></span>
+                    <span>beige</span>
+                </div>
+                <div class="palette__item">
+                    <span class="swatch swatch--brown"></span>
+                    <span>soft brown</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section final">
+            <div class="glass final__inner">
+                <p>С любовью, Arina & Aleksandr</p>
+                <a class="button button--large" href="#">Подтвердить присутствие</a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const musicButton = document.querySelector(".music-player__button");
+        const musicPlayer = document.querySelector(".music-player");
+        const musicProgress = document.querySelector(".music-player__progress");
+        const weddingMusic = document.querySelector("#wedding-music");
+
+        musicButton.addEventListener("click", async () => {
+            if (weddingMusic.paused) {
+                await weddingMusic.play();
+                musicPlayer.classList.add("is-playing");
+                musicButton.setAttribute("aria-label", "Выключить музыку");
+                musicButton.setAttribute("aria-pressed", "true");
+            } else {
+                weddingMusic.pause();
+                musicPlayer.classList.remove("is-playing");
+                musicButton.setAttribute("aria-label", "Включить музыку");
+                musicButton.setAttribute("aria-pressed", "false");
+            }
+        });
+
+        weddingMusic.addEventListener("timeupdate", () => {
+            const progress = weddingMusic.duration
+                ? (weddingMusic.currentTime / weddingMusic.duration) * 100
+                : 0;
+            musicProgress.style.width = `${progress}%`;
+        });
+
+        weddingMusic.addEventListener("ended", () => {
+            musicPlayer.classList.remove("is-playing");
+            musicButton.setAttribute("aria-label", "Включить музыку");
+            musicButton.setAttribute("aria-pressed", "false");
+            musicProgress.style.width = "0%";
+        });
+    </script>
+</body>
+</html>
