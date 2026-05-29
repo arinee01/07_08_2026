@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arina & Aleksandr | Wedding Invitation</title>
+    <title>Arina &amp; Aleksandr | Wedding Invitation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Manrope:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&amp;family=Manrope:wght@300;400;500&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=20260516-1">
 </head>
-<body>
+<body class="invitation-locked">
+    <div class="entry-screen" aria-label="Открытие приглашения">
+        <div class="entry-screen__shade"></div>
+        <div class="entry-screen__content">
+            <p>7 августа 2026</p>
+            <h2>Arina &amp; Aleksandr</h2>
+            <button class="entry-screen__button" type="button">Открыть приглашение</button>
+        </div>
+    </div>
+
     <header class="hero">
         <nav class="hero-nav" aria-label="Главная навигация">
             <button class="hero-nav__icon" type="button" aria-label="Меню">
                 <span></span>
                 <span></span>
             </button>
-            <a class="hero-nav__brand" href="#">Arina & Aleksandr</a>
+            <a class="hero-nav__brand" href="#">Arina &amp; Aleksandr</a>
             <div class="hero-nav__right">
                 <span class="hero-nav__date">7 августа 2026</span>
                 <div class="music-player" aria-label="Музыкальный плеер">
@@ -48,7 +57,7 @@
         <div class="hero__satin" aria-hidden="true"></div>
 
         <div class="hero__content">
-            <audio id="wedding-music" src="audio/МОТ - Намёк на нас.mp3" preload="auto" autoplay></audio>
+            <audio id="wedding-music" src="audio/МОТ - Намёк на нас.mp3" preload="auto"></audio>
 
             <h1>
                 <span>Arina <span class="hero__amp">&amp;</span></span>
@@ -133,7 +142,7 @@
                 <figure class="location-photo">
                     <img src="location/hero--banner__bg.webp" alt="Парк-отель Орловский">
                 </figure>
-                <a class="button" href="https://yandex.com/maps/org/orlovsky_park_hotel/5568406193/?ll=37.857847%2C55.549293&z=14.05" target="_blank" rel="noopener">Открыть на карте</a>
+                <a class="button" href="https://yandex.com/maps/org/orlovsky_park_hotel/5568406193/?ll=37.857847%2C55.549293&amp;z=14.05" target="_blank" rel="noopener">Открыть на карте</a>
             </article>
         </section>
 
@@ -199,6 +208,7 @@
             <h2>Нежная палитра</h2>
             <p>
                 Будем рады, если вы поддержите мягкие оттенки нашего дня.
+                Для нашего праздника мы выбрали тёплую натуральную палитру: айвори, шампань, кремовые, песочные, карамельные и шоколадные оттенки.
             </p>
 
             <div class="dress-palettes">
@@ -212,17 +222,7 @@
                         </div>
                         <div class="palette__item">
                             <span class="swatch">
-                                <img src="colors_pallette/4f3156a09c60704fb34c8d9e821e6032.jpg" alt="Ткань цвета milk">
-                            </span>
-                        </div>
-                        <div class="palette__item">
-                            <span class="swatch">
                                 <img src="colors_pallette/9461dbab5e50673c51f2a82d9f8c9f8a.jpg" alt="Ткань цвета champagne">
-                            </span>
-                        </div>
-                        <div class="palette__item">
-                            <span class="swatch">
-                                <img src="colors_pallette/bc5b8e16ba170e127a35d8592c825f08.jpg" alt="Ткань цвета soft brown">
                             </span>
                         </div>
                         <div class="palette__item">
@@ -232,17 +232,27 @@
                         </div>
                         <div class="palette__item">
                             <span class="swatch">
-                                <img src="colors_pallette/c8a6481c8f47fb2012cfd6bc4fd983dc.jpg" alt="Ткань цвета sand">
-                            </span>
-                        </div>
-                        <div class="palette__item">
-                            <span class="swatch">
                                 <img src="colors_pallette/de52e9a2d4e3926f9f58fb739d2c5cf0.jpg" alt="Ткань цвета cocoa">
                             </span>
                         </div>
                         <div class="palette__item">
                             <span class="swatch">
+                                <img src="colors_pallette/c8a6481c8f47fb2012cfd6bc4fd983dc.jpg" alt="Ткань цвета sand">
+                            </span>
+                        </div>
+                        <div class="palette__item">
+                            <span class="swatch">
                                 <img src="colors_pallette/0ba20cddee99138ab371fea1ec629d35.jpg" alt="Ткань цвета beige">
+                            </span>
+                        </div>
+                        <div class="palette__item">
+                            <span class="swatch">
+                                <img src="colors_pallette/4f3156a09c60704fb34c8d9e821e6032.jpg" alt="Ткань цвета milk">
+                            </span>
+                        </div>
+                        <div class="palette__item">
+                            <span class="swatch">
+                                <img src="colors_pallette/bc5b8e16ba170e127a35d8592c825f08.jpg" alt="Ткань цвета soft brown">
                             </span>
                         </div>
                     </div>
@@ -281,13 +291,87 @@
             </div>
         </section>
 
+        <section class="section glass guest-form" id="guest-form">
+            <p class="section-label">Анкета для гостей</p>
+            <h2>Ваши предпочтения по напиткам</h2>
+            <p>
+                Выберите напитки и нажмите кнопку отправки, чтобы мы могли подготовить все с заботой.
+            </p>
+
+            <form class="drink-form">
+                <div class="drink-form__intro-row">
+                    <label class="drink-form__name">
+                        <span>Ваше имя</span>
+                        <input type="text" name="guest-name" placeholder="Имя и фамилия">
+                    </label>
+
+                    <fieldset class="drink-form__fieldset">
+                        <legend>Подтвердите присутствие</legend>
+
+                        <div class="answer-options">
+                            <label class="answer-option">
+                                <input type="radio" name="attendance" value="Буду" required>
+                                <span>Буду</span>
+                            </label>
+                            <label class="answer-option">
+                                <input type="radio" name="attendance" value="К сожалению, не смогу">
+                                <span>К сожалению, не смогу</span>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <fieldset class="drink-form__fieldset">
+                    <legend>Выберите один или несколько вариантов</legend>
+
+                    <div class="drink-options">
+                        <label class="drink-option">
+                            <input type="checkbox" name="drinks" value="Красное вино">
+                            <span>Красное вино</span>
+                        </label>
+                        <label class="drink-option">
+                            <input type="checkbox" name="drinks" value="Белое вино">
+                            <span>Белое вино</span>
+                        </label>
+                        <label class="drink-option">
+                            <input type="checkbox" name="drinks" value="Игристое вино">
+                            <span>Игристое вино</span>
+                        </label>
+                        <label class="drink-option">
+                            <input type="checkbox" name="drinks" value="Виски">
+                            <span>Виски</span>
+                        </label>
+                        <label class="drink-option">
+                            <input type="checkbox" name="drinks" value="Водка">
+                            <span>Водка</span>
+                        </label>
+                        <label class="drink-option">
+                            <input type="checkbox" name="drinks" value="Безалкогольные напитки">
+                            <span>Безалкогольные напитки</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <label class="drink-form__name drink-form__music">
+                    <span class="form-question-title">
+                        <img src="photo/icons/free-icon-music-282151.png" alt="" aria-hidden="true">
+                    </span>
+                    <small>Под какую песню вы точно выйдете танцевать?</small>
+                    <input type="text" name="song-request" placeholder="Исполнитель — название" aria-label="Под какую песню вы точно выйдете танцевать?">
+                </label>
+
+                <button class="button button--large drink-form__submit" type="submit">Отправить</button>
+                <p class="drink-form__status" aria-live="polite"></p>
+            </form>
+        </section>
+
         <section class="section final">
             <div class="glass final__inner">
                 <p class="final__note">
                     Вместо традиционного «Горько!» нам будет приятно услышать «Совет да любовь!»
                 </p>
-                <p>С любовью, Arina & Aleksandr</p>
-                <a class="button button--large" href="#">Подтвердить присутствие</a>
+                <img class="final__note-icon" src="photo/icons/free-icon-microphone-4521304.png" alt="" aria-hidden="true">
+                <p>С любовью, Arina &amp; Aleksandr</p>
             </div>
         </section>
     </main>
@@ -297,6 +381,10 @@
         const musicPlayer = document.querySelector(".music-player");
         const musicProgress = document.querySelector(".music-player__progress");
         const weddingMusic = document.querySelector("#wedding-music");
+        const entryScreen = document.querySelector(".entry-screen");
+        const entryButton = document.querySelector(".entry-screen__button");
+        const drinkForm = document.querySelector(".drink-form");
+        const drinkFormStatus = document.querySelector(".drink-form__status");
 
         const setMusicState = (isPlaying) => {
             musicPlayer.classList.toggle("is-playing", isPlaying);
@@ -315,22 +403,13 @@
             }
         };
 
-        const playMusicAfterInteraction = async () => {
-            const started = await playMusic();
-
-            if (started) {
-                document.removeEventListener("click", playMusicAfterInteraction);
-                document.removeEventListener("touchstart", playMusicAfterInteraction);
-            }
-        };
-
-        window.addEventListener("load", async () => {
-            const started = await playMusic();
-
-            if (!started) {
-                document.addEventListener("click", playMusicAfterInteraction);
-                document.addEventListener("touchstart", playMusicAfterInteraction);
-            }
+        entryButton.addEventListener("click", async () => {
+            window.scrollTo(0, 0);
+            document.body.classList.remove("invitation-locked");
+            entryScreen.classList.add("is-hidden");
+            entryScreen.setAttribute("aria-hidden", "true");
+            window.scrollTo(0, 0);
+            await playMusic();
         });
 
         musicButton.addEventListener("click", async () => {
@@ -352,6 +431,37 @@
         weddingMusic.addEventListener("ended", () => {
             setMusicState(false);
             musicProgress.style.width = "0%";
+        });
+
+        drinkForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(drinkForm);
+            const guestName = formData.get("guest-name")?.trim() || "Гость";
+            const attendance = formData.get("attendance");
+            const selectedDrinks = formData.getAll("drinks");
+            const songRequest = formData.get("song-request")?.trim() || "";
+
+            if (!attendance) {
+                drinkFormStatus.textContent = "Пожалуйста, подтвердите присутствие.";
+                return;
+            }
+
+            if (!selectedDrinks.length) {
+                drinkFormStatus.textContent = "Пожалуйста, выберите хотя бы один напиток.";
+                return;
+            }
+
+            const answer = {
+                guestName,
+                attendance,
+                drinks: selectedDrinks,
+                songRequest,
+                savedAt: new Date().toISOString(),
+            };
+
+            localStorage.setItem("wedding-drink-answer", JSON.stringify(answer));
+            drinkFormStatus.textContent = `${guestName}, спасибо! Ответ сохранен.`;
         });
     </script>
 </body>
